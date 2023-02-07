@@ -90,8 +90,8 @@ let createPeerConnection = async (MemberId) => {
     document.getElementById('user-1').classList.add('smallFrame');
     
     if (!localStream) {
-        localStream = await navigator.mediaDevices.getUserMedia({video: true, audio: true})
-    document.getElementById('user-1').srcObject = localStream;
+        localStream = await navigator.mediaDevices.getUserMedia(constraints);
+        document.getElementById('user-1').srcObject = localStream;
     }
 
     localStream.getTracks().forEach(track => {
