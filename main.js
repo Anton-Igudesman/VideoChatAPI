@@ -23,7 +23,7 @@ let peerConnection;
 const servers = {
     iceServers: [
         {
-            urls:['stun3.l.google.com:19302', 'stun4.l.google.com:19302']
+            urls:['stun.ekiga.net', 'stun01.sipphone.com']
         }
     ]
 }
