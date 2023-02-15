@@ -22,9 +22,24 @@ let peerConnection;
 
 const servers = {
     iceServers: [
-        {
-            urls:['stun:stun.ekiga.net', 'stun:stun01.sipphone.com']
-        }
+         {
+        urls: "stun:relay.metered.ca:80",
+      },
+      {
+        urls: "turn:relay.metered.ca:80",
+        username: "b125aa13289d7d21b6a9b46d",
+        credential: "OP2kPCZtswKM3icU",
+      },
+      {
+        urls: "turn:relay.metered.ca:443",
+        username: "b125aa13289d7d21b6a9b46d",
+        credential: "OP2kPCZtswKM3icU",
+      },
+      {
+        urls: "turn:relay.metered.ca:443?transport=tcp",
+        username: "b125aa13289d7d21b6a9b46d",
+        credential: "OP2kPCZtswKM3icU",
+      },
     ]
 }
 
